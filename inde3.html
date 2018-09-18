@@ -14,18 +14,22 @@
 			var result = document.getElementsByName("text"+num)[0];
 			var names2 = document.getElementsByName("Index"+num);
 			var result2 = document.getElementsByName("Result"+ names2[0].value)[0];
-			var outcome2 = eval(names[0].value + '*' + 2);
+			var outcome2 = eval(outcome + '*' + 2);
 			result.value = outcome;
 			result2.value = outcome2;
 		}
 		function Calculator_Sub(Oper, num){
-		var names = document.getElementsByName("text"+num);
-		var outcome = eval(names[0].value + Oper + 1);
-		if( outcome < 0){
-			outcome = 0;
-		}	
-		var result = document.getElementsByName("text"+num)[0];
-		result.value = outcome;
+			var names = document.getElementsByName("text"+num);
+			var outcome = eval(names[0].value + Oper + 1);
+			if( outcome < 0){
+				outcome = 0;
+			}	
+			var result = document.getElementsByName("text"+num)[0];
+			var names2 = document.getElementsByName("Index"+num);
+			var result2 = document.getElementsByName("Result"+ names2[0].value)[0];
+			var outcome2 = eval(outcome + '*' + 2);
+			result.value = outcome;
+			result2.value = outcome2;
 		}
 		</script>
 	</head>
