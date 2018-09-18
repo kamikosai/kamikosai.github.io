@@ -11,8 +11,17 @@
 			if( outcome > 5){
 				outcome = 5;
 			}	
-			var result = document.getElementsByName("one_one"+num)[0];
+			var result = document.getElementsByName("text"+num)[0];
 			result.value = outcome;
+		}
+		function Calculator_Sub(Oper, num){
+		var names = document.getElementsByName("text"+num);
+		var outcome = eval(names[0].value + Oper + 1);
+		if( outcome < 0){
+			outcome = 0;
+		}	
+		var result = document.getElementsByName("one_one"+num)[0];
+		result.value = outcome;
 		}
 		</script>
 	</head>
@@ -21,9 +30,9 @@
 			<fieldset style = "width:150">
                 		<legend>1번 카드 입력</legend>
 					<p>1번덱 2<p> 
-					<input type="text"  name="one_one1" size="5" value=1 /><br><br>
-					<input type="button" id="Add_1_1" value="Add" onclick="Calculator_Add('+', 1)" >
-					<input type="button" id="Sub_1_1" value="Sub" onclick="javascript:this.form.one_one.value--;">
+					<input type="text"  name="text11" size="5" value=1 /><br><br>
+					<input type="button" id="Add_1_1" value="Add" onclick="Calculator_Add('+', 11)" >
+					<input type="button" id="Sub_1_1" value="Sub" onclick="Calculator_Sub('-', 11">
 			</fieldset>
 		</form>
 		<!-- <input type="button" id="btn02" value="Kami" onclick="location.href='http://kamikosai.github.io/inde3.html'"/> -->
