@@ -21,7 +21,45 @@
 			var result = document.getElementsByName("text"+num)[0];
 			var names2 = document.getElementsByName("Index"+num);
 			var result2 = document.getElementsByName("Result"+ names2[0].value)[0];
-			var outcome2 = eval(outcome + '*' + 2);
+			
+			switch(num){
+				case "1" :
+					switch(outcome){
+						case "1" :
+							var outcome2 = 1
+							break;
+						case "2" :
+							var outcome2 = 2
+							break;
+						case "3" :
+							var outcome2 = 3
+							break;
+						case "4" :
+							var outcome2 = 4
+							break;
+						case "5" :
+							var outcome2 = 15
+							break;
+					}
+					break;
+				case "2" :
+					break;
+				case "3" :
+					break;
+				case "4" :
+					break;
+				case "5" :
+					break;
+				case "6" :
+					break;
+				case "7" :
+					break;
+				case "8" :
+					break;
+				case "9" :
+					break;
+			}	
+			
 			result.value = outcome;
 			result2.value = outcome2;
 		}
@@ -79,6 +117,12 @@
 			var value83 = document.getElementsByName("Result803");
 			var value84 = document.getElementsByName("Result804");
 			var value85 = document.getElementsByName("Result805");
+			var value91 = document.getElementsByName("Result901");
+			var value92 = document.getElementsByName("Result902");
+			var value93 = document.getElementsByName("Result903");
+			var value94 = document.getElementsByName("Result904");
+			var value95 = document.getElementsByName("Result905");
+			
 			var outcome1 = eval(value11[0].value + '+' + value12[0].value + '+' + value13[0].value + '+' + value14[0].value + '+' + value15[0].value); 
 			var outcome2 = eval(value21[0].value + '+' + value22[0].value + '+' + value23[0].value + '+' + value24[0].value + '+' + value25[0].value);
 			var outcome3 = eval(value31[0].value + '+' + value32[0].value + '+' + value33[0].value + '+' + value34[0].value + '+' + value35[0].value);
@@ -87,9 +131,10 @@
 			var outcome6 = eval(value61[0].value + '+' + value62[0].value + '+' + value63[0].value + '+' + value64[0].value + '+' + value65[0].value);
 			var outcome7 = eval(value71[0].value + '+' + value72[0].value + '+' + value73[0].value + '+' + value74[0].value + '+' + value75[0].value);
 			var outcome8 = eval(value81[0].value + '+' + value82[0].value + '+' + value83[0].value + '+' + value84[0].value + '+' + value85[0].value);
+			var outcome9 = eval(value91[0].value + '+' + value92[0].value + '+' + value93[0].value + '+' + value94[0].value + '+' + value95[0].value);
 			
 			var outcomeA = eval(outcome1 + '+' + outcome2 + '+' + outcome3 + '+' + outcome4);
-			var outcomeB = eval(outcome5 + '+' + outcome6 + '+' + outcome7 + '+' + outcome8);
+			var outcomeB = eval(outcome5 + '+' + outcome6 + '+' + outcome7 + '+' + outcome8 + '+' + outcome9);
 			var outcomeC = eval(outcomeA + '+' + outcomeB);
 			var result = document.getElementsByName("Resulttext"+ num)[0];
 			result.value = outcomeC;
