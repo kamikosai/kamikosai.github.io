@@ -7,7 +7,8 @@
 		<script type="text/javascript">
 		function Calculator_Add(num){
 			var names = document.getElementsByName("one_one"+num);
-			var outcome = eval("names[0].value + 1");
+			var a =1;
+			var outcome = eval("names[0].value + a");
 			names[0].value = outcome;
 		}
 		</script>
@@ -16,7 +17,7 @@
 		<form action = "#" accept-charset="utf-8" name = "person_info" method = "get">
 			<fieldset style = "width:150">
                 		<legend>1번 카드 입력</legend>
-					<p>1번덱 6<p> 
+					<p>1번덱 1<p> 
 					<input type="text"  name="one_one1" size="5" value=1 /><br><br>
 					<input type="button" id="Add_1_1" value="Add" onclick="Calculator_Add(1)" >
 					<input type="button" id="Sub_1_1" value="Sub" onclick="javascript:this.form.one_one.value--;">
