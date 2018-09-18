@@ -7,8 +7,9 @@
 		<script type="text/javascript">
 		function ChageSelect(num){
 			var selectboxindex = document.getElementsByName("Index"+num);
-			var result = document.getElementsByName("Result"+ selectboxindex[0].value)[0];
+			var result = document.getElementsByName("Result"+ selectboxindex[0].value);
 			var outcome = eval(result[0].value + '/' + 2);
+			var names = document.getElementsByName("text"+num);
 			names.value = outcome;
 		}
 		function Calculator_Add(Oper, num){
