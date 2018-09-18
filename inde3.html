@@ -8,7 +8,7 @@
 		function Calculator_Add(name){
 			var names = document.getElementsByName(name);
 			var value = names[0].value
-			var result = value + 1;
+			var result = value+1;
 			result.value = result;
 		}
 		</script>
@@ -18,7 +18,7 @@
 			<fieldset style = "width:150">
                 		<legend>1번 카드 입력</legend>
 					<p>1번덱 2<p> 
-					<input type="text"  name="1_1" size="5"/><br><br>
+					<input type="text"  name="1_1" size="5" value=1/><br><br>
 					<input type="button" id="Add_1_1" value="Add" onclick="Calculator_Sum('1_1')"/>
 					<input type="button" id="Sub_1_1" value="Sub"/>
 			</fieldset>
