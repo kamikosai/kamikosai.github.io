@@ -40,14 +40,16 @@
 		}
 		function Calculator_Result(num){
 			var value11 = document.getElementsByName("Result101");
+			var value12 = document.getElementsByName("Result102");
+			var outcome = eval(value11[0].value + '+' + value12[0].value);
 			var result = document.getElementsByName("Resulttext"+ num)[0];
-			result.value = value11[0].value;
+			result.value = outcome;
 		}
 		</script>
 	</head>
 	<body><h1>아키올로지</h1>
 		<form action = "#" accept-charset="utf-8" name = "person_info" method = "get">
-			<font size='5'>결 과1</font><input type="text"  name="Resulttext1" size="1" value=0 />
+			<font size='5'>결 과</font><input type="text"  name="Resulttext1" size="1" value=0 />
 			<input type="button" id="Add" value="Total Result" onclick="Calculator_Result(1)" ><br><br>
 			<fieldset style = "width:150">
                 		<legend>질그릇 파편</legend>
