@@ -6,7 +6,7 @@
 		<title>Kami World</title>
 		<script type="text/javascript">
 		function Calculator_Add(Oper, num){
-			var names = document.getElementsByName("one_one"+num);
+			var names = document.getElementsByName("text"+num);
 			var outcome = eval(names[0].value + Oper + 1);
 			if( outcome > 5){
 				outcome = 5;
@@ -20,7 +20,7 @@
 		if( outcome < 0){
 			outcome = 0;
 		}	
-		var result = document.getElementsByName("one_one"+num)[0];
+		var result = document.getElementsByName("text"+num)[0];
 		result.value = outcome;
 		}
 		</script>
