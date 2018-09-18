@@ -7,8 +7,10 @@
 		<script type="text/javascript">
 		function Calculator_Add(Oper, num){
 			var names = document.getElementsByName("one_one"+num);
-			var a =1;
 			var outcome = eval(names[0].value + Oper + 1);
+			if( outcome > 5){
+				outcome = 5;
+			}	
 			var result = document.getElementsByName("one_one"+num)[0];
 			result.value = outcome;
 		}
