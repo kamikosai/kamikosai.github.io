@@ -20,7 +20,8 @@
 					<p>1번덱 2<p> 
 					<input type="text"  name="one_one" size="5" value=1 /><br><br>
 					<input type="button" id="Add_1_1" value="Add" onclick= function() {
-					       if( javascript:this.form.one_one.value+1 > 5)
+					       var names document.getElementsByName(name);
+					       if( names[0].value +1 > 5)
 						{
 							javascript:this.form.one_one.value = 5;
 						}
