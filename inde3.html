@@ -12,7 +12,11 @@
 				outcome = 5;
 			}	
 			var result = document.getElementsByName("text"+num)[0];
+			var names2 = document.getElementsByName("Index"+num);
+			var result2 = document.getElementsByName("Result"+ names2[0].value)[0];
+			var outcome2 = eval(names[0].value + '*' + 2);
 			result.value = outcome;
+			result2.value = outcome2;
 		}
 		function Calculator_Sub(Oper, num){
 		var names = document.getElementsByName("text"+num);
@@ -32,18 +36,18 @@
 					<p>Deck Index
 					<select name="Index1">
 						<option value='' selected>--Select--</option>
-						<option value='1'>1</option>
-						<option value='2'>2</option>
-						<option value='3'>3</option>
-						<option value='4'>4</option>
-						<option value='5'>5</option>
-						<option value='6'>6</option>
-						<option value='7'>7</option>
-						<option value='8'>8</option>
-						<option value='9'>9</option>
-						<option value='10'>10</option>
-						<option value='11'>11</option>
-						<option value='12'>12</option>
+						<option value='101'>1</option>
+						<option value='102'>2</option>
+						<option value='103'>3</option>
+						<option value='104'>4</option>
+						<option value='105'>5</option>
+						<option value='106'>6</option>
+						<option value='107'>7</option>
+						<option value='108'>8</option>
+						<option value='109'>9</option>
+						<option value='110'>10</option>
+						<option value='111'>11</option>
+						<option value='112'>12</option>
 					</select> 
 					<input type="text"  name="text1" size="1" value=0 />
 					<input type="button" id="Add" value="Add" onclick="Calculator_Add('+', 1)" >
