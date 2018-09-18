@@ -79,10 +79,20 @@
 			var value83 = document.getElementsByName("Result803");
 			var value84 = document.getElementsByName("Result804");
 			var value85 = document.getElementsByName("Result805");
-			var outcome = eval(value11[0].value + '+' + value12[0].value + '+' + value13[0].value + '+' + value14[0].value + '+' + value15[0].value); 
-					   
+			var outcome1 = eval(value11[0].value + '+' + value12[0].value + '+' + value13[0].value + '+' + value14[0].value + '+' + value15[0].value); 
+			var outcome2 = eval(value21[0].value + '+' + value22[0].value + '+' + value23[0].value + '+' + value24[0].value + '+' + value25[0].value);
+			var outcome3 = eval(value31[0].value + '+' + value32[0].value + '+' + value33[0].value + '+' + value34[0].value + '+' + value35[0].value);
+			var outcome4 = eval(value41[0].value + '+' + value42[0].value + '+' + value43[0].value + '+' + value44[0].value + '+' + value45[0].value);
+			var outcome5 = eval(value51[0].value + '+' + value52[0].value + '+' + value53[0].value + '+' + value54[0].value + '+' + value55[0].value);
+			var outcome6 = eval(value61[0].value + '+' + value62[0].value + '+' + value63[0].value + '+' + value64[0].value + '+' + value65[0].value);
+			var outcome7 = eval(value71[0].value + '+' + value72[0].value + '+' + value73[0].value + '+' + value74[0].value + '+' + value75[0].value);
+			var outcome8 = eval(value81[0].value + '+' + value82[0].value + '+' + value83[0].value + '+' + value84[0].value + '+' + value85[0].value);
+			
+			var outcomeA = eval(outcome1 + '+' + outcome2 + '+' + outcome3 + '+' + outcome4);
+			var outcomeB = eval(outcome5 + '+' + outcome6 + '+' + outcome7 + '+' + outcome8);
+			var outcomeC = eval(outcomeA + '+' + outcomeB);
 			var result = document.getElementsByName("Resulttext"+ num)[0];
-			result.value = outcome;
+			result.value = outcomeC;
 		}
 		</script>
 	</head>
