@@ -1,28 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Example</title>
-<script type="text/javascript">
-function calculator(operator, num){
-    var names = document.getElementsByName("cal"+num);
-    var outcome = eval(names[0].value + operator + names[1].value);
-    var result = document.getElementsByName("result"+num)[0];
-    result.value = outcome;
-}
-</script>
-<style type="text/css">
-input[type="text"] {
-    width: 50px;
-    border: 1px solid gray;
-}
-</style>
-</head>
-
-<body>
-<input type="text" name="cal0"> + <input type="text" name="cal0"> <input type="button" value="=" onclick="calculator('+', 0)"> <input type="text" name="result0"><br>
-<input type="text" name="cal1"> - <input type="text" name="cal1"> <input type="button" value="=" onclick="calculator('-', 1)"> <input type="text" name="result1"><br>
-<input type="text" name="cal2"> x <input type="text" name="cal2"> <input type="button" value="=" onclick="calculator('*', 2)"> <input type="text" name="result2"><br>
-<input type="text" name="cal3"> / <input type="text" name="cal3"> <input type="button" value="=" onclick="calculator('/', 3)"> <input type="text" name="result3"><br>
-</body>
+	<head>
+		<title>Kami World</title>
+	</head>
+	<body><h1>This is Shy</h1>
+		<p>이것이 맥주다.</p>
+		<p>예슬이는 쩌는 힐러</p>
+		<p>나는 허접 딜러 ㅠ</p>
+		<input type="button" id="btn" value="눌러눌러" onclick="alert('예슬아 사랑해')"/>
+	</body>
 </html>
