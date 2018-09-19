@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-    <title>Parent</title>
-    
-    <script type="text/javascript">
-    
-        var openWin;
-    
-        function openChild()
-        {
-            // window.name = "ºÎ¸ğÃ¢ ÀÌ¸§"; 
-            window.name = "parentForm";
-            // window.open("openÇÒ window", "ÀÚ½ÄÃ¢ ÀÌ¸§", "ÆË¾÷Ã¢ ¿É¼Ç");
-            openWin = window.open("Child.html",
-                    "childForm", "width=570, height=350, resizable = no, scrollbars = no");    
-        }
-        
-        function setChildText(){
-            openWin.document.getElementById("cInput").value = document.getElementById("pInput").value;
-        }
+<title>Parent</title>
+
+<script type="text/javascript">
+
+    var openWin;
+
+    function openChild()
+    {
+        // window.name = "ë¶€ëª¨ì°½ ì´ë¦„"; 
+        window.name = "parentForm";
+        // window.open("opení•  window", "ìì‹ì°½ ì´ë¦„", "íŒì—…ì°½ ì˜µì…˜");
+        openWin = window.open("Child.html",
+                "childForm", "width=570, height=350, resizable = no, scrollbars = no");    
+    }
+
+    function setChildText(){
+        openWin.document.getElementById("cInput").value = document.getElementById("pInput").value;
+    }
  
    </script>
     
@@ -27,9 +26,9 @@
 <body>
  
     <br>
-    <b><font size="5" color="gray">ºÎ¸ğÃ¢</font></b>
+    <b><font size="5" color="gray">ë¶€ëª¨ì°½</font></b>
     <br><br>
-    <input type="button" value="ÀÚ½ÄÃ¢ ¿­±â" onclick="openChild()"><br>
-    Àü´ŞÇÒ °ª : <input type="text" id="pInput"> <input type="button" value="Àü´Ş" onclick="setChildText()">
+    <input type="button" value="ìì‹ì°½ ì—´ê¸°" onclick="openChild()"><br>
+    ì „ë‹¬í•  ê°’ : <input type="text" id="pInput"> <input type="button" value="ì „ë‹¬" onclick="setChildText()">
 </body>
 </html>
