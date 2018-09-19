@@ -26,12 +26,18 @@
         {
            //value =  document.getElementByName("Name" + ( CountTemp + iLoopCount) ).value;    
             document.write("kamikami");
-             var jbBtn = document.createElement( 'button' );
-             var jbBtnText = document.createTextNode( 'Click' );
-             jbBtn.appendChild( jbBtnText );
-            document.body.appendChild( jbBtn );
-            document.write("<br>");
+            // var jbBtn = document.createElement( 'button' );
+            // var jbBtnText = document.createTextNode( 'Click' );
+            // jbBtn.appendChild( jbBtnText );
+            //document.body.appendChild( jbBtn );
+            //document.write("<br>");
             //alert("kamikami");
+            var div = document.createElement('div');
+            var text = document.createTextNode('텍스트');
+            var fragment = document.createDocumentFragment();
+            div.appendChild(text);
+            fragment.appendChild(div);
+            document.body.appendChild(fragment);
         }
         
        // var value =  document.getElementById("pInput").value;
