@@ -15,8 +15,8 @@
     }
 
     function setChildText(){
-        var result = document.getElementById("pInput");
-        var outcome = document.getElementById("11")[0];
+        var result = document.getElementByName("kami1");
+        var outcome = document.getElementByName("kami2")[0];
         outcome.value = result[0].value;
         alert("kami");
     }
@@ -30,7 +30,7 @@
     <b><font size="5" color="gray">부모창</font></b>
     <br><br>
     <input type="button" value="자식창 열기" onclick="openChild()"><br>
-    전달할 값1 : <input type="hidden" id="pInput" value="kamikami"> <input type="button" value="전달" onclick="setChildText()">
-    <input type="text" id="11" value="1">
+    전달할 값1 : <input type="hidden" id="pInput" Name="kami1" value="kamikami"> <input type="button" value="전달" onclick="setChildText()">
+    <input type="text" id="11" Name="kami2" value="1">
 </body>
 </html>
