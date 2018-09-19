@@ -16,6 +16,8 @@
 
     function setChildText(){
         var result = document.getElementById("pInput");
+        var outcome = document.getElementById("11")[0];
+        outcome = result[0].value;
         alert("kami");
     }
  
@@ -29,5 +31,6 @@
     <br><br>
     <input type="button" value="자식창 열기" onclick="openChild()"><br>
     전달할 값1 : <input type="hidden" id="pInput" value="kamikami"> <input type="button" value="전달" onclick="setChildText()">
+    <input type="text" id="11" value="1">
 </body>
 </html>
