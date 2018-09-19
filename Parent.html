@@ -22,6 +22,14 @@
         var CountTemp = 10;
         // document.getElementById("11").value = document.getElementById("pInput").value;
        
+        
+         var div = document.createElement('div');
+            var text = document.createTextNode('텍스트');
+            var fragment = document.createDocumentFragment();
+            div.appendChild(text);
+            fragment.appendChild(div);
+            document.body.appendChild(fragment);
+        
         for(iLoopCount = 0; iLoopCount < ListCount; iLoopCount++)
         {
            //value =  document.getElementByName("Name" + ( CountTemp + iLoopCount) ).value;    
@@ -32,12 +40,7 @@
             //document.body.appendChild( jbBtn );
             //document.write("<br>");
             //alert("kamikami");
-            var div = document.createElement('div');
-            var text = document.createTextNode('텍스트');
-            var fragment = document.createDocumentFragment();
-            div.appendChild(text);
-            fragment.appendChild(div);
-            document.body.appendChild(fragment);
+           
         }
         
        // var value =  document.getElementById("pInput").value;
