@@ -23,10 +23,11 @@
    function Shearch()
     {
         var student = [
-        { name : "오를레앙", StartName : "O",  MinPlayer : 2, MaxPlayer : 4, BastPlayer : 4, PlayTime : 30},
-        { name : "카탄", StartName : "K", MinPlayer : 1, MaxPlayer : 2, BastPlayer : 2, PlayTime : 60},
-        { name : "하나비", StartName : "H", MinPlayer : 2, MaxPlayer : 6, BastPlayer : 6,  PlayTime : 15 },
-        { name : "로빈슨쿠르소", StartName : "R", MinPlayer : 2, MaxPlayer : 8, BastPlayer : 4,  PlayTime : 120},
+        { name : "오를레앙", name2 : "오를레앙", StartName : "O",  MinPlayer : 2, MaxPlayer : 4, BastPlayer : 4, PlayTime : 30},
+        { name : "카탄", name2 : "카탄 : 항해사", StartName : "K", MinPlayer : 1, MaxPlayer : 2, BastPlayer : 2, PlayTime : 60},
+	{ name : "카탄", name2 : "카탄 : 도시와 기사", StartName : "K", MinPlayer : 1, MaxPlayer : 2, BastPlayer : 2, PlayTime : 60},
+        { name : "하나비", name2 : "하나비", StartName : "H", MinPlayer : 2, MaxPlayer : 6, BastPlayer : 6,  PlayTime : 15 },
+        { name : "로빈슨쿠르소", name2 : "로빈슨쿠르소", StartName : "R", MinPlayer : 2, MaxPlayer : 8, BastPlayer : 4,  PlayTime : 120},
         ]
         
         var a = student;
@@ -113,7 +114,7 @@
             var cell4 = row.insertCell(3);
             var cell5 = row.insertCell(4);
             
-            cell1.innerHTML = b[j].name; 
+            cell1.innerHTML = b[j].name2; 
             cell2.innerHTML = b[j].MinPlayer;
             cell3.innerHTML = b[j].MaxPlayer;
             cell4.innerHTML = b[j].BastPlayer;
