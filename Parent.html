@@ -23,6 +23,7 @@
         a = student;
         var Count = 0;
         
+        /*
         var table = document.getElementById("table");
         var row = table.insertRow(table.rows.length);
         var cell1 = row.insertCell(0);
@@ -31,6 +32,7 @@
         var cell4 = row.insertCell(3);
         var cell5 = row.insertCell(4);
         var cell6 = row.insertCell(5);
+        */
         
         for(i = 0; i<BoadgameCount; i++)
         {    
@@ -43,12 +45,21 @@
         
         for(j = 0; j<Count; j++)
         {
+              var table = document.getElementById("table");
+            var row = table.insertRow(table.rows.length);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+            var cell6 = row.insertCell(5);
+            
                 cell1.innerHTML = a[j].name;
-                cell1.innerHTML = a[j].MinPlayer;
-                cell1.innerHTML = a[j].MaxPlayer;
-                cell1.innerHTML = a[j].BastPlayer;
-                cell1.innerHTML = a[j].PlayTime;
-                cell1.innerHTML = a[j].Link;
+                cell2.ierHTML = a[j].MinPlayer;
+                cell3.iinnerHTML = a[j].MaxPlayer;
+                cell4.innerHTML = a[j].BastPlayer;
+                cell5.innerHTML = a[j].PlayTime;
+                cell6.innerHTML = a[j].Link;
              //document.write(a[j].name + "&nbsp" + a[j].MinPlayer + "&nbsp" + a[j].MaxPlayer + "&nbsp" + a[j].BastPlayer + "<br>");
         }
         
