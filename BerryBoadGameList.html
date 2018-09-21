@@ -108,96 +108,23 @@
             cell4.innerHTML = b[j].BastPlayer;
             cell5.innerHTML = b[j].PlayTime; 
         }
-        
-        
-        /*
-        student.sort(function(a, b) { // 오름차순
-        return a.name2 < b.name2 ? -1 : a.name2 > b.name2 ? 1 : 0;
-        // 광희, 명수, 재석, 형돈
-        });
-        
-        a = student;
-        
-        document.write(a[0].name2 + "<br>");
-        document.write(a[1].name2 + "<br>");
-        document.write(a[2].name2 + "<br>");
-        document.write(a[3].name2 + "<br>");
-        */
-    }
-
-    /*var ListCount = 4;
-
-    function openChild()
-    {
-        // window.open("open할 window", "자식창 이름", "팝업창 옵션");
-        openWin = window.open("http://kamikosai.github.io/Child.html");   
-        openWin.close();
-    }
-
-    function setChildText(){
-        var value;
-        var CountTemp = 10;
-        // document.getElementById("11").value = document.getElementById("pInput").value;
-       
-        
-        //var div = document.createElement('div');
-        var jbBtn = document.createElement( 'button' );
-        var jbBtnText = document.createTextNode( 'Click' );
-        jbBtn.appendChild( jbBtnText );
-        //div.appendChild(jbBtn);
-        document.body.appendChild(jbBtn);
-       
-        //document.write("kamikami&nbsp&nbsp&nbsp");
-            
-            var div = document.createElement('div');
-            var text = document.createTextNode('텍스트');
-            div.appendChild(text);
-            document.body.appendChild(div);
-        
-            var div = document.createElement('div');
-            var text = document.createTextNode('텍스트2');
-            div.appendChild(text);
-            document.body.appendChild(div);
-        
-        //document.write("kamikami&nbsp&nbsp&nbsp");
-        //document.write("kamikami&nbsp&nbsp&nbsp");
-        //document.write("kamikami&nbsp&nbsp&nbsp");
-        
-        
-        for(iLoopCount = 0; iLoopCount < ListCount; iLoopCount++)
-        {
-           //value =  document.getElementByName("Name" + ( CountTemp + iLoopCount) ).value;    
-            //document.write("kamikami");
-            // var jbBtn = document.createElement( 'button' );
-            // var jbBtnText = document.createTextNode( 'Click' );
-            // jbBtn.appendChild( jbBtnText );
-            //document.body.appendChild( jbBtn );
-            //document.write("<br>");
-            //alert("kamikami");
-           
-        }
-        
-       // var value =  document.getElementById("pInput").value;
-       // document.getElementById("11").value = value;
-    }
-    */
    </script>
     <br>
     <h1>Berry</h1>
     <h1>BoardGame List</h1>
     <br>
-    <h1> 총 4 개 보드게임 보유중</h1>    
+    <h1> &nbsp&nbsp 총 4 개 보드게임 보유중</h1>    
     <br>
     
-    검 색 유 형 : 
-    <select id="index1" name="Index1" style="width:130pt;height:18pt;text-align:center;" onchange="ChageSelect(1)">
+    검 색 유 형 : &nbsp
+    <select id="index1" name="Index1" style="width:1800pt;height:18pt;text-align:center;" onchange="ChageSelect(1)">
 						<option value='' selected>--Select--</option>
 						<option selected="selected" value='1'>이 름</option>
 						<option style="text-align:center;" value='2'>최소 인원</option>
 						<option style="text-align:center;" value='3'>최대 인원</option>
-					</select> <br>
-    <input type="text" id="BoardGameName" Name="BoardGameName" style="width:100pt;height:18pt;text-align:center;" value=""> 
-    <input type="button" value="검 색" style="width:50pt;height:25pt;text-align:center;" onclick="Shearch()">
+					</select> <br><br>
+    <input type="text" id="BoardGameName" Name="BoardGameName" style="width:200pt;height:18pt;text-align:center;" value=""> 
+    <input type="button" value="검 색" style="width:80pt;height:25pt;text-align:center;" onclick="Shearch()">
 
     <table border="3" frame=border>
         <thead>
