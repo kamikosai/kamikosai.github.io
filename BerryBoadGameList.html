@@ -45,21 +45,26 @@
         
         for(j = 0; j<Count; j++)
         {
-              var table = document.getElementById("table");
+            var table = document.getElementById("table");
+            var row = table.insertRow(table.rows.length);
+            var cell1 = row.insertCell(0);
+            
+            cell1.innerHTML = a[j].name;
+            
+            var table = document.getElementById("table");
             var row = table.insertRow(table.rows.length);
             var cell1 = row.insertCell(0);
             var cell2 = row.insertCell(1);
             var cell3 = row.insertCell(2);
             var cell4 = row.insertCell(3);
             var cell5 = row.insertCell(4);
-            var cell6 = row.insertCell(5);
             
-                cell1.innerHTML = a[j].name;
-                cell2.innerHTML = a[j].MinPlayer;
-                cell3.innerHTML = a[j].MaxPlayer;
-                cell4.innerHTML = a[j].BastPlayer;
-                cell5.innerHTML = a[j].PlayTime;
-                cell6.innerHTML = a[j].Link;
+            cell1.innerHTML = a[j].MinPlayer;
+            cell2.innerHTML = a[j].MaxPlayer;
+            cell3.innerHTML = a[j].BastPlayer;
+            cell4.innerHTML = a[j].PlayTime; 
+            cell5.innerHTML = a[j].Link; 
+
              //document.write(a[j].name + "&nbsp" + a[j].MinPlayer + "&nbsp" + a[j].MaxPlayer + "&nbsp" + a[j].BastPlayer + "<br>");
         }
         
@@ -143,14 +148,13 @@
     <h1> 총 4 개 보드게임 보유중</h1>    
     <br>
     
-    검 색 : <input type="text" id="BoardGameName" Name="BoardGameName" style="width:100pt;height:18pt;text-align:center;" "value=""> 
+    검 색 : <input type="text" id="BoardGameName" Name="BoardGameName" style="width:100pt;height:18pt;text-align:center;" value=""> 
     <input type="button" value="검 색 " style="width:50pt;height:25pt;text-align:center;" onclick="Shearch()">
 
     <table border="3" frame=border>
         <thead>
            <tr>
-            <th align="middle", width="50", height="20">번    호</th>
-            <th align="middle", width="290", height="20">정    보</th>
+            <th align="middle", width="340", height="20">정    보</th>
            </tr>
         </thead>
         <tbody id="table"></tbody>
