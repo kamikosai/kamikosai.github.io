@@ -136,7 +136,8 @@
 	    switch(Number(SelectNum))
 	    {
 		    case 1:
-			     if( student[i].name === Value)
+			    // if( student[i].name === Value)
+			    if( student[i].name.indexOf(Value) === 0 )
 			    {   
 				a[Count] = student[i];
 				Count++;
@@ -200,7 +201,7 @@
     <br>
     <h1>Berry</h1>
     <h1>BoardGame List</h1>
-    <h1> &nbsp&nbsp 총 80 개 보드게임 보유중</h1>    
+    <h1> &nbsp&nbsp 총 81 개 보드게임 보유중</h1>    
 
     검 색 유 형 : &nbsp
     <select id="index1" name="Index1" style="width:200pt;height:20pt;text-align:center;" onchange="ChageSelect(1)">
