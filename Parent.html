@@ -18,7 +18,7 @@
    function Shearch()
     {
         student.sort(function(a, b) { // 오름차순
-        return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+        return a.name2 < b.name2 ? -1 : a.name2 > b.name2 ? 1 : 0;
         // 광희, 명수, 재석, 형돈
         });
         
@@ -109,7 +109,7 @@
     <input type="hidden" id="A_02_18_PlayerAge2" value="18세">
     <input type="hidden" id="A_02_18_Link2" value="http:naver.com">
     
-    전달할 값1: <input type="button" value="전달" onclick="Shearch()">
+    전달할 값3: <input type="button" value="전달" onclick="Shearch()">
     <input type="text" id="11" Name="kami2" value="2">
 </body>
 </html>
