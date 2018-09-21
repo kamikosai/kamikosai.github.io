@@ -10,19 +10,23 @@
         
     var BoadgameCount = 4;
     var Count = 0;
+    var SelectNum = 1;
 
    function ChageSelect()
    {
+        var selectboxindex = document.getElementsByName("Index1");
+	SelectNum = selectboxindex[0].value;
 	   
+	alert(SelectNum);
    }
 	    
    function Shearch()
     {
         var student = [
-        { name : "오를레앙", name2 : "ABCD", StartName : "O",  MinPlayer : 2, MaxPlayer : 4, BastPlayer : 4, PlayTime : 30},
-        { name : "카탄", name2 : "EFG",  StartName : "K", MinPlayer : 1, MaxPlayer : 2, BastPlayer : 2, PlayTime : 60},
-        { name : "하나비", name2 : "EHA",  StartName : "H", MinPlayer : 2, MaxPlayer : 6, BastPlayer : 6,  PlayTime : 15 },
-        { name : "로빈슨쿠르소", name2 : "ZRE",  StartName : "R", MinPlayer : 2, MaxPlayer : 8, BastPlayer : 4,  PlayTime : 120},
+        { name : "오를레앙", StartName : "O",  MinPlayer : 2, MaxPlayer : 4, BastPlayer : 4, PlayTime : 30},
+        { name : "카탄", StartName : "K", MinPlayer : 1, MaxPlayer : 2, BastPlayer : 2, PlayTime : 60},
+        { name : "하나비", StartName : "H", MinPlayer : 2, MaxPlayer : 6, BastPlayer : 6,  PlayTime : 15 },
+        { name : "로빈슨쿠르소", StartName : "R", MinPlayer : 2, MaxPlayer : 8, BastPlayer : 4,  PlayTime : 120},
         ]
         
         var a = student;
@@ -55,11 +59,31 @@
         
         for(i = 0; i<BoadgameCount; i++)
         {    
-            if( student[i].MinPlayer === Number(Value))
-            {   
-                a[Count] = student[i];
-                Count++;
-            }
+	    switch(SelectNum)
+	    {
+		    case 1:
+			     if( student[i].name === Number(Value))
+			    {   
+				a[Count] = student[i];
+				Count++;
+			    }
+			    break;
+		    case 2:
+			     if( student[i].MinPlayer === Number(Value))
+			    {   
+				a[Count] = student[i];
+				Count++;
+			    }
+			    break;
+		    case 3: 
+			     if( student[i].MaxPlayer === Number(Value))
+			    {   
+				a[Count] = student[i];
+				Count++;
+			    }
+			    break;
+	    }
+           
         }
         
         for(j = 0; j<Count; j++)
@@ -156,7 +180,7 @@
     <h1>Berry</h1>
     <h1>BoardGame List</h1>
     <br>
-    <h1> 총 3 개 보드게임 보유중</h1>    
+    <h1> 총 1 개 보드게임 보유중</h1>    
     <br>
     
     검 색 유 형 : 
