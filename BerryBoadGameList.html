@@ -29,7 +29,7 @@
         {
             var my_tbody = document.getElementById("table");
             
-            for(i =0; i < Count-1; i++)
+            for(i =0; i < Count; i++)
             {
                 my_tbody.deleteRow( my_tbody.rows.length-1 ); // 하단부터 삭제
             }
@@ -144,7 +144,7 @@
     <br>
     
     검 색 : <input type="text" id="BoardGameName" Name="BoardGameName" style="width:100pt;height:18pt;text-align:center;" value=""> 
-    <input type="button" value="검 색 " style="width:50pt;height:25pt;text-align:center;" onclick="Shearch()">
+    <input type="button" value="이름으로 검색" style="width:50pt;height:25pt;text-align:center;" onclick="Shearch()">
 
     <table border="3" frame=border>
         <thead>
