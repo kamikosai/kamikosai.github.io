@@ -23,16 +23,21 @@
         a = student;
         var Count = 0;
         
+        document.write("kami1<br>");
+        
         for(i = 0; i<BoadgameCount; i++)
         {
+            document.write("kami2<br>");
             if( student[i].MinPlayer === 2)
             {
+                document.write("kami3<br>");
                 a[Count] = student[i];
             }
         }
         
         for(j = 0; j<Count; j++)
         {
+            document.write("kami4<br>");
              document.write(a[j].name + "&nbsp" + a[j].MinPlayer + "&nbsp" + a[j].MaxPlayer + "&nbsp" + a[j].BestPlayer + "<br>");
         }
         
