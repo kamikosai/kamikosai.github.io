@@ -14,6 +14,8 @@
     { name : "하나비", name2 : "EHA",  StartName : "H", Minage : 8},
     { name : "로빈슨쿠르소", name2 : "ZRE",  StartName : "R", Minage : 45},
     ]
+    
+    var a;
    
    function Shearch()
     {
@@ -22,10 +24,12 @@
         // 광희, 명수, 재석, 형돈
         });
         
-        document.write(student[0].name2);
-        document.write(student[1].name2);
-        document.write(student[2].name2);
-        document.write(student[3].name2);
+        a = student;
+        
+        document.write(a[0].name2 + "<br>");
+        document.write(a[1].name2 + "<br>");
+        document.write(a[2].name2 + "<br>");
+        document.write(a[3].name2 + "<br>");
     }
 
     /*var ListCount = 4;
@@ -109,7 +113,7 @@
     <input type="hidden" id="A_02_18_PlayerAge2" value="18세">
     <input type="hidden" id="A_02_18_Link2" value="http:naver.com">
     
-    전달할 값5: <input type="button" value="전달" onclick="Shearch()">
+    전달할 값8: <input type="button" value="전달" onclick="Shearch()">
     <input type="text" id="11" Name="kami2" value="2">
 </body>
 </html>
