@@ -10,19 +10,17 @@
         
     var BoadgameCount = 4;
     var Count = 0;
-        
-    var student = [
-    { name : "오를레앙", name2 : "ABCD", StartName : "O",  MinPlayer : 2, MaxPlayer : 4, BastPlayer : 4, PlayTime : 30},
-    { name : "카탄", name2 : "EFG",  StartName : "K", MinPlayer : 1, MaxPlayer : 2, BastPlayer : 2, PlayTime : 60},
-    { name : "하나비", name2 : "EHA",  StartName : "H", MinPlayer : 2, MaxPlayer : 6, BastPlayer : 6,  PlayTime : 15 },
-    { name : "로빈슨쿠르소", name2 : "ZRE",  StartName : "R", MinPlayer : 2, MaxPlayer : 8, BastPlayer : 4,  PlayTime : 120},
-    ]
-    
-    var a;
-   
+
    function Shearch()
     {
-        a = student;
+        var student = [
+        { name : "오를레앙", name2 : "ABCD", StartName : "O",  MinPlayer : 2, MaxPlayer : 4, BastPlayer : 4, PlayTime : 30},
+        { name : "카탄", name2 : "EFG",  StartName : "K", MinPlayer : 1, MaxPlayer : 2, BastPlayer : 2, PlayTime : 60},
+        { name : "하나비", name2 : "EHA",  StartName : "H", MinPlayer : 2, MaxPlayer : 6, BastPlayer : 6,  PlayTime : 15 },
+        { name : "로빈슨쿠르소", name2 : "ZRE",  StartName : "R", MinPlayer : 2, MaxPlayer : 8, BastPlayer : 4,  PlayTime : 120},
+        ]
+        
+        var a = student;
       
         if( Count > 0 )
         {
@@ -154,7 +152,7 @@
     <h1>Berry</h1>
     <h1>BoardGame List</h1>
     <br>
-    <h1> 총 4 개 보드게임 보유중</h1>    
+    <h1> 총 5 개 보드게임 보유중</h1>    
     <br>
     
     검 색 : <input type="text" id="BoardGameName" Name="BoardGameName" style="width:100pt;height:18pt;text-align:center;" value=""> 
