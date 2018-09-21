@@ -10,10 +10,10 @@
         
     var BoadgameCount = 4;
     var student = [
-    { name : "오를레앙", name2 : "ABCD", StartName : "O",  MinPlayer : 2, MaxPlayer : 4, BastPlayer : 4 },
-    { name : "카탄", name2 : "EFG",  StartName : "K", MinPlayer : 1, MaxPlayer : 2, BastPlayer : 2 },
-    { name : "하나비", name2 : "EHA",  StartName : "H", MinPlayer : 2, MaxPlayer : 6, BastPlayer : 6 },
-    { name : "로빈슨쿠르소", name2 : "ZRE",  StartName : "R", MinPlayer : 2, MaxPlayer : 8, BastPlayer : 4 },
+    { name : "오를레앙", name2 : "ABCD", StartName : "O",  MinPlayer : 2, MaxPlayer : 4, BastPlayer : 4, PlayTime : 30 },
+    { name : "카탄", name2 : "EFG",  StartName : "K", MinPlayer : 1, MaxPlayer : 2, BastPlayer : 2, PlayTime : 60 },
+    { name : "하나비", name2 : "EHA",  StartName : "H", MinPlayer : 2, MaxPlayer : 6, BastPlayer : 6,  PlayTime : 15 },
+    { name : "로빈슨쿠르소", name2 : "ZRE",  StartName : "R", MinPlayer : 2, MaxPlayer : 8, BastPlayer : 4,  PlayTime : 120 },
     ]
     
     var a;
@@ -23,28 +23,39 @@
         a = student;
         var Count = 0;
         
-        document.write("kami1<br>");
-        
         for(i = 0; i<BoadgameCount; i++)
-        {
-            document.write("kami2<br>");
+        {    
             if( student[i].MinPlayer === 2)
-            {
-                document.write("kami3<br>");
+            {   
                 a[Count] = student[i];
                 Count++;
             }
         }
         
-         document.write("kami4<br>");
+        <table boarder ="1">
+           <tr>
+            <th>이 름</th>
+            <th>최소 플레이어</th>
+            <th>최대 플레이어</th>
+            <th>플레이 타임</th>
+            <th>주소 링크</th>
+           </tr>
+           
         
         for(j = 0; j<Count; j++)
         {
-            document.write("kami5<br>");
-             document.write(a[j].name + "&nbsp" + a[j].MinPlayer + "&nbsp" + a[j].MaxPlayer + "&nbsp" + a[j].BastPlayer + "<br>");
+            <tr>
+                <td> a[j].name </td>
+                <td> a[j].MinPlayer </td>
+                <td> a[j].MaxPlayer </td>
+                <td> a[j].BastPlayer </td>
+                <td> a[j].PlayTime </td>
+            </tr>
+             //document.write(a[j].name + "&nbsp" + a[j].MinPlayer + "&nbsp" + a[j].MaxPlayer + "&nbsp" + a[j].BastPlayer + "<br>");
         }
+        </table>
         
-         document.write("kami6<br>");
+        
         /*
         student.sort(function(a, b) { // 오름차순
         return a.name2 < b.name2 ? -1 : a.name2 > b.name2 ? 1 : 0;
