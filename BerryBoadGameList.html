@@ -81,12 +81,16 @@
 			    }
 			    break;
 	    }
-           
         }
-        
-	//a.sort(function(a, b) { // 오름차순
-        //return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
-	//});
+	var b = new Array();
+	for(c = 0; c<Count; c++)
+        {   
+	    b[c] = a[c];
+	}
+	    
+	b.sort(function(a, b) { // 오름차순
+        return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+	});
 	    
         for(j = 0; j<Count; j++)
         {   
@@ -98,11 +102,11 @@
             var cell4 = row.insertCell(3);
             var cell5 = row.insertCell(4);
             
-            cell1.innerHTML = a[j].name; 
-            cell2.innerHTML = a[j].MinPlayer;
-            cell3.innerHTML = a[j].MaxPlayer;
-            cell4.innerHTML = a[j].BastPlayer;
-            cell5.innerHTML = a[j].PlayTime; 
+            cell1.innerHTML = b[j].name; 
+            cell2.innerHTML = b[j].MinPlayer;
+            cell3.innerHTML = b[j].MaxPlayer;
+            cell4.innerHTML = b[j].BastPlayer;
+            cell5.innerHTML = b[j].PlayTime; 
         }
         
         
