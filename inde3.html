@@ -418,13 +418,14 @@
 	</head>
 	<body><h1>아키올로지</h1>
 		<form action = "#" accept-charset="utf-8" name = "person_info" method = "get">
-			<font size='5'>결 과 &nbsp </font><input type="text"  name="Resulttext1" size="45" value=0 /> <br><br>
-			<input type="button" id="Add" value="Total Point" style="width:125pt;height:30pt;text-align:center;" onclick="Calculator_Result(1)" >
+			<font size='5'>결 과 &nbsp 
+			</font><input type="text"  name="Resulttext1" style="text-align:center;" size="45" value=0 /> <br><br>
+			<input type="button" id="Add" value="Total Point" style="width:125pt;height:30pt;" onclick="Calculator_Result(1)" >
 			<input type="button" id="Add" value="Reset" style="width:125pt;height:30pt;"onclick="Reset()" ><br><br>
 			<fieldset style = "width:150">
                 		<legend>질그릇 파편</legend>
 					<p>Deck Index
-					<select id="index1" name="Index1" style="width:30pt;height:18pt;text-align:center;" onchange="ChageSelect(1)">
+					<select id="index1" name="Index1" style="width:100pt;height:18pt;text-align:center;" onchange="ChageSelect(1)">
 						<option value='' selected>--Select--</option>
 						<option selected="selected" value='101'>1</option>
 						<option value='102'>2</option>
@@ -433,14 +434,14 @@
 						<option value='105'>5</option>
 					</select> 
 					<input type="text"  name="text1" size="1" style="width:30pt;height:18pt;text-align:center;" value=0 /> <br>
-					<input type="button" id="Add" value="+" style="width:125pt;height:18pt;text-align:center;" onclick="Calculator_Add('+', 1)" >
-					<input type="button" id="Sub" value="-" style="width:125pt;height:18pt;text-align:center;" onclick="Calculator_Sub('-', 1)" >
+					<input type="button" id="Add" value="+" style="width:120pt;height:18pt;text-align:center;" onclick="Calculator_Add('+', 1)" >
+					<input type="button" id="Sub" value="-" style="width:120pt;height:18pt;text-align:center;" onclick="Calculator_Sub('-', 1)" >
 					</P>
-					<font size='2'>1</font><input type="text"  name="Result101" size="2" value=0 />
-					<font size='2'>2</font><input type="text"  name="Result102" size="2" value=0 />
-					<font size='2'>3</font><input type="text"  name="Result103" size="2" value=0 />
-					<font size='2'>4</font><input type="text"  name="Result104" size="2" value=0 />
-					<font size='2'>5</font><input type="text"  name="Result105" size="2" value=0 />
+					<font size='2'>1</font><input type="text"  name="Result101" size="2" style="width:30pt;height:18pt;text-align:center;" value=0 />
+					<font size='2'>2</font><input type="text"  name="Result102" size="2" style="width:30pt;height:18pt;text-align:center;" value=0 />
+					<font size='2'>3</font><input type="text"  name="Result103" size="2" style="width:30pt;height:18pt;text-align:center;" value=0 />
+					<font size='2'>4</font><input type="text"  name="Result104" size="2" style="width:30pt;height:18pt;text-align:center;" value=0 />
+					<font size='2'>5</font><input type="text"  name="Result105" size="2" style="width:30pt;height:18pt;text-align:center;" value=0 />
 			</fieldset>
 			<fieldset style = "width:150">
 			<legend>양피지 두루마리</legend>
