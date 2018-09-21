@@ -53,12 +53,14 @@
         
         Count = 0;
         
+	    alert("kami1");
         var Value = document.getElementById("BoardGameName").value;
         
         alert(Value);
         
         for(i = 0; i<BoadgameCount; i++)
         {    
+		 alert("kami4");
 	    switch(SelectNum)
 	    {
 		    case 1:
@@ -69,6 +71,7 @@
 			    }
 			    break;
 		    case 2:
+			     alert("kami2");
 			     if( student[i].MinPlayer === Number(Value))
 			    {   
 				a[Count] = student[i];
@@ -76,6 +79,7 @@
 			    }
 			    break;
 		    case 3: 
+			     alert("kami3");
 			     if( student[i].MaxPlayer === Number(Value))
 			    {   
 				a[Count] = student[i];
@@ -180,7 +184,7 @@
     <h1>Berry</h1>
     <h1>BoardGame List</h1>
     <br>
-    <h1> 총 2 개 보드게임 보유중</h1>    
+    <h1> 총 1 개 보드게임 보유중</h1>    
     <br>
     
     검 색 유 형 : 
