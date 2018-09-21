@@ -27,7 +27,7 @@
         var my_tbody = document.getElementById("table");
         
          document.write("kami2");
-        if (my_tbody.rows.length != 1)
+        if (my_tbody.rows.length > 1)
         {
             document.write("kami3");
             my_tbody.deleteRow( my_tbody.rows.length-1 ); // 하단부터 삭제
@@ -138,7 +138,7 @@
     <h1>Berry</h1>
     <h1>BoardGame List</h1>
     <br>
-    <h1> 총 3 개 보드게임 보유중</h1>    
+    <h1> 총 4 개 보드게임 보유중</h1>    
     <br>
     
     검 색 : <input type="text" id="BoardGameName" Name="BoardGameName" style="width:100pt;height:18pt;text-align:center;" value=""> 
