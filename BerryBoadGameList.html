@@ -10,7 +10,7 @@
         
     var BoadgameCount = 4;
     var Count = 0;
-    var SelectNum = 1;
+    var SelectNum = 5;
 
    function ChageSelect()
    {
@@ -80,6 +80,17 @@
 				Count++;
 			    }
 			    break;
+	             case 4: 
+			     if( student[i].BastPlayer === Number(Value))
+			    {   
+				a[Count] = student[i];
+				Count++;
+			    }
+			    break;
+		     case 5: 
+			    a[Count] = student[i];
+			    Count++;
+			    break;
 	    }
         }
 	var b = new Array();
@@ -118,9 +129,11 @@
     검 색 유 형 : &nbsp
     <select id="index1" name="Index1" style="width:200pt;height:20pt;text-align:center;" onchange="ChageSelect(1)">
 						<option value='' selected>--Select--</option>
+	    					<option style="text-align:center;" value='5'>전체 </option>
 						<option selected="selected" value='1'>이 름</option>
 						<option style="text-align:center;" value='2'>최소 인원</option>
 						<option style="text-align:center;" value='3'>최대 인원</option>
+	    					<option style="text-align:center;" value='4'>최적 인원</option>
 					</select> <br><br>
     <input type="text" id="BoardGameName" Name="BoardGameName" style="width:195pt;height:18pt;text-align:center;" value=""> 
     <input type="button" value="검 색" style="width:60pt;height:25pt;text-align:center;" onclick="Shearch()"> <br><br>
@@ -137,6 +150,7 @@
         </thead>
         <tbody id="table"></tbody>
     </table>
-    
+	
+    Shearch();
 </body>
 </html>
