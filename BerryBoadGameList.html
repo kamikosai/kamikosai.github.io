@@ -24,41 +24,33 @@
     {
         a = student;
       
-        
         if( Count > 0 )
         {
-            //for(i =0; i < Count; i++)
-            //{
-              //  alert("kami");
             var Check= 1;
+            
             while(Check)
             {
-                alert("kami");
-                
                 var my_tbody = document.getElementById("table");
                 
                 if(0 === my_tbody.rows.length)
                 {
-                     alert("kami4");
                     Check=0;
                 }
                 else
                 {
-                     alert("kami5");
-                    
                     my_tbody.deleteRow( my_tbody.rows.length-1 ); // 하단부터 삭제
                 }
-                
-                alert("kami3");
             }
-                
-            //}
+
         }
         
         Count = 0;
         
         for(i = 0; i<BoadgameCount; i++)
         {    
+            alert(student[i].MinPlayer);
+            alert(student[i].name);
+            
             if( student[i].MinPlayer === 2)
             {   
                 a[Count] = student[i];
@@ -162,7 +154,7 @@
     <h1>Berry</h1>
     <h1>BoardGame List</h1>
     <br>
-    <h1> 총 3 개 보드게임 보유중</h1>    
+    <h1> 총 4 개 보드게임 보유중</h1>    
     <br>
     
     검 색 : <input type="text" id="BoardGameName" Name="BoardGameName" style="width:100pt;height:18pt;text-align:center;" value=""> 
