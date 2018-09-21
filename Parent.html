@@ -8,17 +8,35 @@
 <body>
     <script type="text/javascript">
         
+    var BoadgameCount = 4;
     var student = [
-    { name : "오를레앙", name2 : "ABCD", StartName : "O",  Minage : 21},
-    { name : "카탄", name2 : "EFG",  StartName : "K", Minage : 11},
-    { name : "하나비", name2 : "EHA",  StartName : "H", Minage : 8},
-    { name : "로빈슨쿠르소", name2 : "ZRE",  StartName : "R", Minage : 45},
+    { name : "오를레앙", name2 : "ABCD", StartName : "O",  MinPlayer : 2, MaxPlayer : 4, BastPlayer : 4 },
+    { name : "카탄", name2 : "EFG",  StartName : "K", MinPlayer : 1, MaxPlayer : 2, BastPlayer : 2 },
+    { name : "하나비", name2 : "EHA",  StartName : "H", MinPlayer : 2, MaxPlayer : 6, BastPlayer : 6 },
+    { name : "로빈슨쿠르소", name2 : "ZRE",  StartName : "R", MinPlayer : 2, MaxPlayer : 8, BastPlayer : 4 },
     ]
     
     var a;
    
    function Shearch()
     {
+        a = student;
+        var Count = 0;
+        
+        for(i = 0; i<BoadgameCount; i++)
+        {
+            if( student[i].MinPlayer === 2)
+            {
+                a[Count] = student[i];
+            }
+        }
+        
+        for(j = 0; j<Count; j++)
+        {
+             document.write(a[j].name + "&nbsp" + a[j].MinPlayer + "&nbsp" + a[j].MaxPlayer + "&nbsp" + a[j].BestPlayer + "<br>");
+        }
+        
+        /*
         student.sort(function(a, b) { // 오름차순
         return a.name2 < b.name2 ? -1 : a.name2 > b.name2 ? 1 : 0;
         // 광희, 명수, 재석, 형돈
@@ -30,6 +48,7 @@
         document.write(a[1].name2 + "<br>");
         document.write(a[2].name2 + "<br>");
         document.write(a[3].name2 + "<br>");
+        */
     }
 
     /*var ListCount = 4;
@@ -113,7 +132,7 @@
     <input type="hidden" id="A_02_18_PlayerAge2" value="18세">
     <input type="hidden" id="A_02_18_Link2" value="http:naver.com">
     
-    전달할 값8: <input type="button" value="전달" onclick="Shearch()">
+    전달할 값2: <input type="button" value="전달" onclick="Shearch()">
     <input type="text" id="11" Name="kami2" value="2">
 </body>
 </html>
