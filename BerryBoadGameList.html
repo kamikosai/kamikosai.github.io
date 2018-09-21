@@ -44,17 +44,14 @@
         
         Count = 0;
         
+        var Value = document.getElementById("BoardGameName").value;
+        
         for(i = 0; i<BoadgameCount; i++)
         {    
-            alert(student[i].MinPlayer);
-            alert(student[i].name);
-            
-            if( student[i].MinPlayer === 2)
+            if( student[i].MinPlayer === Value)
             {   
                 a[Count] = student[i];
                 Count++;
-                
-                alert("kami1");
             }
         }
         
@@ -152,7 +149,7 @@
     <h1>Berry</h1>
     <h1>BoardGame List</h1>
     <br>
-    <h1> 총 5 개 보드게임 보유중</h1>    
+    <h1> 총 1 개 보드게임 보유중</h1>    
     <br>
     
     검 색 : <input type="text" id="BoardGameName" Name="BoardGameName" style="width:100pt;height:18pt;text-align:center;" value=""> 
