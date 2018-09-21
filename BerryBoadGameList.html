@@ -25,13 +25,16 @@
         
         document.write("kami1");
         var my_tbody = document.getElementById("table");
+        
+         document.write("kami2");
         if (my_tbody.rows.length != 1)
         {
-            document.write("kami2");
+            document.write("kami3");
             my_tbody.deleteRow( my_tbody.rows.length-1 ); // 하단부터 삭제
         }
         
-        document.write("kami3");
+        document.write("kami4");
+        
         for(i = 0; i<BoadgameCount; i++)
         {    
             if( student[i].MinPlayer === 2)
