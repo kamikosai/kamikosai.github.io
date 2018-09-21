@@ -16,6 +16,8 @@
    {
         var selectboxindex = document.getElementsByName("Index1");
 	SelectNum = selectboxindex[0].value;
+	var result = document.getElementsByName("BoardGameName")[0];
+	result.value = "";
    }
 	    
    function Shearch()
@@ -83,7 +85,7 @@
         }
         
 	a.sort(function(a, b) { // 오름차순
-        return a.name2 < b.name2 ? -1 : a.name2 > b.name2 ? 1 : 0;
+        return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
 	});
 	    
         for(j = 0; j<Count; j++)
