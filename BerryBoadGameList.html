@@ -9,6 +9,8 @@
     <script type="text/javascript">
         
     var BoadgameCount = 4;
+    var Count = 0;
+        
     var student = [
     { name : "오를레앙", name2 : "ABCD", StartName : "O",  MinPlayer : 2, MaxPlayer : 4, BastPlayer : 4, PlayTime : 30},
     { name : "카탄", name2 : "EFG",  StartName : "K", MinPlayer : 1, MaxPlayer : 2, BastPlayer : 2, PlayTime : 60},
@@ -21,17 +23,24 @@
    function Shearch()
     {
         a = student;
-        var Count = 0;
+      
         
         document.write("kami1");
-        var my_tbody = document.getElementById("table");
-        
-         document.write("kami2");
-
+        if( Count > 1 )
+        {
+            var my_tbody = document.getElementById("table");
+            document.write("kami2");
+            
             document.write("kami3");
-            my_tbody.deleteRow( my_tbody.rows.length-1 ); // 하단부터 삭제
+            for(i =0; i < Count-1; i++)
+            {
+                my_tbody.deleteRow( my_tbody.rows.length-1 ); // 하단부터 삭제
+            }
         
+        }
         document.write("kami4");
+        
+        Count = 0;
         
         for(i = 0; i<BoadgameCount; i++)
         {    
@@ -136,7 +145,7 @@
     <h1>Berry</h1>
     <h1>BoardGame List</h1>
     <br>
-    <h1> 총 5 개 보드게임 보유중</h1>    
+    <h1> 총 6 개 보드게임 보유중</h1>    
     <br>
     
     검 색 : <input type="text" id="BoardGameName" Name="BoardGameName" style="width:100pt;height:18pt;text-align:center;" value=""> 
