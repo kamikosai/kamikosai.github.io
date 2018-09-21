@@ -151,10 +151,17 @@
     <h1>Berry</h1>
     <h1>BoardGame List</h1>
     <br>
-    <h1> 총 1 개 보드게임 보유중</h1>    
+    <h1> 총 3 개 보드게임 보유중</h1>    
     <br>
     
-    검 색 : <input type="text" id="BoardGameName" Name="BoardGameName" style="width:100pt;height:18pt;text-align:center;" value=""> 
+    검 색 : 
+    <select id="index1" name="Index1" style="width:130pt;height:18pt;text-align:center;" onchange="ChageSelect(1)">
+						<option value='' selected>--Select--</option>
+						<option selected="selected" value="이 름">1</option>
+						<option style="text-align:center;" value="최소 인원">2</option>
+						<option style="text-align:center;" value="최대 인원">3</option>
+					</select> 
+    <input type="text" id="BoardGameName" Name="BoardGameName" style="width:100pt;height:18pt;text-align:center;" value=""> 
     <input type="button" value="이름으로 검색" style="width:50pt;height:25pt;text-align:center;" onclick="Shearch()">
 
     <table border="3" frame=border>
