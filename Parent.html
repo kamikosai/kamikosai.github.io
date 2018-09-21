@@ -7,8 +7,23 @@
 </head>
 <body>
     <script type="text/javascript">
+        
+    var student = [
+    { name : "재석", age : 21},
+    { name : "광희", age : 25},
+    { name : "형돈", age : 13},
+    { name : "명수", age : 44}
+    ]
+   
+   function Shearch()
+    {
+        student.sort(function(a, b) { // 오름차순
+        return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+        // 광희, 명수, 재석, 형돈
+        });
+    }
 
-    var ListCount = 4;
+    /*var ListCount = 4;
 
     function openChild()
     {
@@ -63,7 +78,7 @@
        // var value =  document.getElementById("pInput").value;
        // document.getElementById("11").value = value;
     }
- 
+    */
    </script>
     <br>
     <h1>Berry</h1>
